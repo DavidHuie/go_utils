@@ -9,10 +9,7 @@ func quickSortHelper(list []int, c chan []int) {
 	length := len(list)
 
 	// Handle base cases
-	if length == 0 {
-		c <- []int{}
-		return
-	} else if length == 1 {
+	if length <= 1 {
 		c <- list
 		return
 	}
