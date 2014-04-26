@@ -11,6 +11,7 @@ func TestQuickSort(t *testing.T) {
 	listEqual(t, QuickSort([]int{3, 2, 1}), []int{1, 2, 3})
 	listEqual(t, QuickSort([]int{4, 3, 2, 1}), []int{1, 2, 3, 4})
 	listEqual(t, QuickSort([]int{1, 2, 3, 4}), []int{1, 2, 3, 4})
+	listEqual(t, QuickSort([]int{4, 4, 4, 4}), []int{4, 4, 4, 4})
 }
 
 func listEqual(t *testing.T, l1 []int, l2 []int) {
